@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang=«ru»>
+<html lang="ru">
  <head>
    <meta charset="utf-8">
    <title>Барбершоп "Бородинский"</title>
@@ -10,7 +10,7 @@
        <nav class="main-navigation">
          <ul>
            <li>
-            <a href="#"><img src="адрес картинки"></a>
+            <a href="#"><img src="img/logo.png"></a>
            </li>
           <li>
             <a href="#">Информация</a>
@@ -35,17 +35,35 @@
      </div>
    </header>
    <main class="container">
+     <div class="log-in-form">
+     <form action="https://echo.htmlacademy.ru" method="post">
+       <span>Личный кабинет</span>
+        <legend>Введите, пожалуйста, свой логин и пароль</legend>
+           <label>
+            <input type="text" name="login" value="Логин">
+           </label>
+           <label>
+            <input type="password" name="password" value="Пароль">
+           </label>
+           <label>
+            <input type="checkbox" name="subscribe" checked>
+           Запомните меня
+          </label>
+           <a href="#">Я забыл пароль!</a>
+            <input type="submit" value="Войти">
+     </form>
+   </div>
      <h1>Набор для путешествий «Baxter of California»</h1>
-      <div class=«breadcrumbs»>
+      <div class="breadcrumbs">
         <ul>
           <li>
-            <a class=«crumbs» href=«#»>Главная</a>
+            <a class="crumbs" href=«#»>Главная</a>
           </li>
           <li>
-            <a class=«crumbs» href=«#»>Магазин</a>
+            <a class="crumbs" href=«#»>Магазин</a>
           </li>
           <li>
-           <a class=«crumbs» href=«#»>Средства для ухода</a>
+           <a class="crumbs" href=«#»>Средства для ухода</a>
           </li>
           <li>
             <span>Набор для путешествий «Baxter of California»</span>
@@ -55,16 +73,16 @@
       <div class="goodscard">
         <div class="goodscard-left">
           <div class="goodscard-gallery">
-            <a class="goods-gallery selected" href="#"><img src="товар"></a>
+            <a class="goods-gallery-selected" href="#"><img src="img/good0.jpg"></a>
           </div>
-          <div class="goods-gallery one">
-            <a href="#"><img src="товар1"></a>
+          <div class="goods-gallery">
+            <a href="#"><img src="img/good1.jpg"></a>
           </div>
-          <div class="goods-gallery two">
-            <a href="#"><img src="товар2"></a>
+          <div class="goods-gallery">
+            <a href="#"><img src="img/good2.jpg"></a>
           </div>
-          <div class="goods-gallery three">
-            <a href="#"><img src="товар3"></a>
+          <div class="goods-gallery">
+            <a href="#"><img src="img/good3.jpg"></a>
           </div>
         </div>
         <div class="goodscard-right">
@@ -78,6 +96,7 @@
             <a class="btn" href="#">Купить</a>
           </div>
           <div class="goodscard-description">
+            <h3>В набор входят:</h3>
             <ul>
               <li>
                 Средство для умывания (50 мл)
