@@ -63,13 +63,13 @@
            <a class="crumbs" href=«#»>Магазин</a>
          </li>
          <li>
-          <a class="crumbs checked" href=«#»>Средства для ухода</a>
+          <a class="crumbs checked" href=«#»>Средства для ухода</a> <!-- Последняя крошка не ссылкой -->
          </li>
        </ul>
      </div>
      <div class="shop-list">
       <form action="https://barbershop/shop.ru" method="get">
-        <h2>Производители:</h2>
+        <h2>Производители:</h2> <!-- Тут тоже legend :) Смотри, ниже несколько чекбоксов, этот заголовок их как бы группирует, как и следующий группирует радиобаттоны -->
          <label>
           <input type="checkbox" name="manufacture" value="california" id="california-field" checked> Baxter of California
          </label>
@@ -96,7 +96,7 @@
            <input type="radio" name="groups" value="Средства для ухода"> Средства для ухода
          </label>
          <label>
-           <input type="radio" name="groups" value="БАксессуары"> Аксессуары
+           <input type="radio" name="groups" value="БАксессуары"> Аксессуары <!-- БАаааАаа -->
          </label>
        <button type="submit" value="Показать">
        </form>
@@ -104,7 +104,7 @@
      <div class="goods-catalog">
        <div class="goods-card">
          <a class="goods-card-photo" href="#"><img src="imd/card1.jpg"></a>
-         <a class="goods-card-name" href="#"><p>Набор для путешествий</p> <br> <p>"Baxter of California"</p></a>
+         <a class="goods-card-name" href="#"><p>Набор для путешествий</p> <br> <p>"Baxter of California"</p></a> <!-- br-ка лишняя, тут и так два <p> внутри -->
          <div class="goodscard-price">
            <span>2 900 руб.</span>
            <a class="btn" href="#">Купить</a>
