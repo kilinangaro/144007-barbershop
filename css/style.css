@@ -1,7 +1,7 @@
 body {
-  font-family: PT Sans Narrow, sans-serif;
+  font-family: PT Sans Narrow, sans-serif; /*Шрифт с пробелами надо убирать в кавычки, иначе воспринимает как несколько разных*/
   font-size: 14px;
-  line-height: 1em;
+  line-height: 1em; /*Можно просто 1, если хочешь "обнулить" значения высоты строки у элементов*/
   color: #000000;
   /*color: #f7f4f1;*/
   font-weight: bold;
