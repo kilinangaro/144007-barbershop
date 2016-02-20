@@ -1,15 +1,17 @@
 body  {
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: "PT Sans Narrow", "Arial" sans-serif;
+  font-weight: 700;
   font-size: 14px;
-  line-height: 1;
-  color: black;
-  /*color: #f7f4f1;*/
-  font-weight: bold;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #000000 url("img/barbershop-index.jpg") no-repeat center top;
+  /*картинка не подключается*/
 }
 
 html,
 body {
-   min-width: 1122px;
+   min-width: 960px;
    margin: 0;
    padding: 0;
 }
@@ -29,6 +31,8 @@ body {
 
 .main-header{
    margin-bottom: 60px;
+   background-color: #000000;
+   color: #ffffff;
 }
 
 .main-navigation {
@@ -37,18 +41,78 @@ body {
    min-height: 70px;
 }
 
+.main-navigation a {
+  display: block;
+  padding: 25px 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main-navigation a:hover {
+  background: #242424;
+}
+
+.main-navigation ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   font-size: 0;
+}
+
+.main-navigation li {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  line-height: 30px;
+}
+
 .user-block {
    float: right;
-   width: 140px;
+   max-width: 140px;
    min-height: 70px;
+}
+
+.login {
+  position: relative;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: top;
+  padding: 25px 20px;
+  padding-left: 50px;
+}
+
+.login:hover {
+  background: #242424;
+}
+
+.login::before {
+  position: absolute;
+  top: 28px;
+  left: 20px;
+  opacity: 0.3;
+  content: '';
+  width: 18px;
+  height: 18px;
+  background: transparent url("img/sprite.png") no-repeat;
+}
+
+.login:hover::before {
+  opacity: 1;
 }
 
 .index-logo {
    height: 204px;
    width: 368px;
-   margin-left: auto;
-   margin-right: auto;
+   margin: 0 auto;
    margin-bottom: 25px;
+}
+
+.index-logo img {
+   height: 204px;
+   width: 368px;
 }
 
 .features {
